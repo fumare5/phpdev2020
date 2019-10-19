@@ -4,6 +4,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-for ($index = 0; $index < 100; $index++) {
+for ($index = 0; $index < 5; $index++) {
     echo "Heloooo!!!!!";
 } 
