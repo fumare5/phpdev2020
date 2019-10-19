@@ -5,4 +5,4 @@ PHP online edukacija
 
 kratku pauzu imamo nakon 2 sata, da ranije zavrsimo dovoljno je 15 min?
 
-sljedece predavanje je u utorak
+sljedece predavanje je u utorak u 18:00
