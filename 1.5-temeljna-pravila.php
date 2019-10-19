@@ -16,14 +16,14 @@
 # još jedan linijski komentar
 ?>
 
-<p> Ovo je neki html paragraf....</p><br>
+<p> Ovo je prvi html paragraf</p><br>
 <p style="font-weight: bolder "> Ovo je neki drugi html paragraf</p><br>
 
 <?php
-echo "Ovo je php!!!!";
-ECHO "Ovo je php!!!!";
-eCHo "Ovo je php!!!!";
+echo "Ovo je php!!!"; 
+ECHO "Ovo je php!!!";
+eCHo "Ovo je php!!!";
 ?>
-<?="Ovo je skraceno" ?>
+<?="Ovo je skračeno" ?>
 
 <p style="font-weight: bold"> Natrag na html</p><br>
