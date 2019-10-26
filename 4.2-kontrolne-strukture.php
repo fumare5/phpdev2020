@@ -17,11 +17,21 @@ echo "<hr>";
 
 
 
-$naziv="Algebra1";
-if(strlen($naziv)==7){
-    echo "naziv ima 7 znakova";
+$naziv="Alge123456";
+if(strlen($naziv)>=10){
+    echo "naziv ima 10 ili vise znakova"; 
 }
-else {
-    echo "naziv ima ".strlen($naziv)." znakova";
+elseif(strlen($naziv)>=5 && strlen($naziv)<10){
+    echo "broj znakova u nazivu je izmedju 5 i 10"; 
 }
+else{
+    echo "broj znakova u nazivu je premali";
+}
+echo "<hr>";
+echo "skraceni izraz<br>";
 
+
+$a=6;
+echo ($a>5)?-1:1; ///(uvijet)? TRUE : FALSE
+
+?>
