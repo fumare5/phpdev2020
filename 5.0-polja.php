@@ -100,6 +100,7 @@ foreach ($polje as $key => $value) {
 }
 echo '</ul>';
 
+echo '<hr>';
 
 /**
  * Ispis pojedinih elementa polja
