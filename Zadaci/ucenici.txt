@@ -1,0 +1,43 @@
+1. Ivan Ivic
+2. Petar Petric
+3. Marko Markic
+4. Ana Anic
+5. Ante Antic;
+
+$datoteka = file($filename);
+
+foreach($datoteka as $line_num => $line)
+{
+echo $line."\n";
+}
+
+
+
+;
+
+$datoteka = file($filename);
+
+foreach($datoteka as $line_num => $line)
+{
+echo $line."\n";
+}
+
+
+
+;
+
+$datoteka = file($filename);
+
+foreach($datoteka as $line_num => $line)
+{
+echo $line."\n";
+}
+
+
+
+
+
+
+
+ydfawč g,esrkgh špskhšerpk hpšojeropgjaepo gjhopajsd
+sd gnergn jbpoerkh 
