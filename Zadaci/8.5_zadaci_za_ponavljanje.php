@@ -63,36 +63,26 @@ echo 'Riješenje za zadatak 8.5.3';
 echo "<br>";
 echo "<br>";
 
-$filename ='radna_datoteka.txt';
+$file = 'radna_datoteka.txt';
 
-$datoteka = file($filename);
-
-foreach ($datoteka as $line_num => $line) 
-{
-    echo $line."\n";
-}
-       
- echo'
-<form method="POST"action="">
- Upiši željeni tekst:
-<textarea name="txt">
-
-
-
-
-</textarea>
- <br/>
- <input type="submit"name="btn"value="Spremi"/>
-</form>';
-
-if(isset($_POST["btn"]))
-{
-$handle = fopen($filename, 'a+');
-    
-    fwrite($handle, $_POST["txt"]);
-    
-    fclose($handle);
-}
-
-
-?>
+   echo '<form method="POST" action="">'
+   . 'Tekst box:<br>'
+           . '<textarea name="txt" rows="10" cols="50">';
+  
+   $current = file_get_contents($file);
+   echo $current;
+   echo '</textarea><br><input type="submit" name="btn" value="Spremi"/></form>';
+   
+   if(isset($_POST["btn"])){
+       echo 'Promijenili ste sadržaj i spremili u datoteku. <br>'
+       . 'Novi sadržaja (u nastavku detaljno) će se pojaviti u gornjem prozoru'
+               . ' kada osvježite stranicu :<br>';
+       echo $_POST["txt"];
+         // novi sadržaj
+        $novi = $_POST["txt"];
+         // pohrana sadržaja u istu datoteku
+        file_put_contents($file, $novi);
+      
+         }
+   
+   ?>
