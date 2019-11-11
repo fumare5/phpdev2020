@@ -111,4 +111,5 @@ class Race {
         $this->no_laps8= rand(200,480);
     }
 
+   
 }

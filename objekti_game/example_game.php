@@ -10,7 +10,7 @@ class Game {
     var $dir = 'games/';
     
     public function print_game() {
-        echo "<div style='float: left; margin-right: 40px; '>";
+        echo "<div style='float: left; margin-right: 35px; '>";
         echo "<font size='5px'>{$this->name}</font>".self::BR;
         echo '$'.$this->price;
         echo "</div>";

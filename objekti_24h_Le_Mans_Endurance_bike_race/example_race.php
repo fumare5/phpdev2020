@@ -17,12 +17,6 @@ $crew8=new Crew("Suzuki");
 $race= new Race($crew1, $crew2, $crew3, $crew4, $crew5, $crew6, $crew7, $crew8);
 $race->drive (new DateTime("now"));
 
-$rang=new Rang_list();
-$rang->add ($race);
-$rang->ispisi_tablicu();
-        
-
-
 
 
 //ispis odveženih krugova u 24h

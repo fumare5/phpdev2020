@@ -18,16 +18,6 @@ class Rang_list {
     private $no_laps7;
     private $no_laps8;
 
-    public function add(Race $s){
-        $this->polje_utrka[]=$s;
-}
-
-    public function ispisi_tablicu() {
-        print_r($this->no_laps1);
-    }
-
-    public function dodaj($race) {
-        
-    }
+  
 
 }
