@@ -25,21 +25,13 @@ $rang->ispisi_tablicu();
 
 
 
-
-
+//ispis odveženih krugova u 24h
 echo "Team Aprilia drove ".$race->no_laps1()," laps in 24 hours","<br>";
-
 echo "Team BMW drove ".$race->no_laps2()," laps in 24 hours","<br>";
-
 echo "Team Ducati drove ".$race->no_laps3()," laps in 24 hours","<br>";
-
 echo "Team KTM drove ".$race->no_laps4()," laps in 24 hours","<br>";
-
 echo "Team Honda drove ".$race->no_laps5()," laps in 24 hours","<br>";
-
 echo "Team Yamaha drove ".$race->no_laps6()," laps in 24 hours","<br>";
-
 echo "Team Kawasaki drove ".$race->no_laps7()," laps in 24 hours","<br>";
-
 echo "Team Suzuki drove ".$race->no_laps8()," laps in 24 hours","<br>";
 
