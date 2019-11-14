@@ -43,6 +43,4 @@ echo "<tr><td> 6 </td><td> $crew_name6 </td><td> ".$race->no_laps6()," </td>";
 echo "<tr><td> 7 </td><td> $crew_name7 </td><td> ".$race->no_laps7()," </td>";
 echo "<tr><td> 8 </td><td> $crew_name8 </td><td> ".$race->no_laps8()," </td></tr>";
 
-
-
-
+?>
