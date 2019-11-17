@@ -38,7 +38,7 @@ function tablica_ispis($imena_tablica)
         </tr></thead><tbody>';
         
  foreach ($imena_tablica as $key => $data){
-           
+     
             echo '<tr>
                 <td style="text-align: center">'.$data["rbr"].'</td>
                 <td style="width:70px">'.$data["prezime"].'</td>
