@@ -37,126 +37,181 @@ function tablica_ispis($imena_tablica)
         <th style="width:70px"> Placeno </th>
         </tr></thead><tbody>';
         
- foreach ($imena_tablica as $key => $poduzetnik){
+ foreach ($imena_tablica as $key => $data){
            
             echo '<tr>
-                <td style="text-align: center">'.$poduzetnik["rbr"].'</td>
-                <td style="width:70px">'.$poduzetnik["prezime"].'</td>
-                <td style="width:70px">'.$poduzetnik["ime"].'</td>
-                <td style="text-align: center">'.$poduzetnik["datum"].'</td>
-                <td style="text-align: center">'.$poduzetnik["placeno"].'</td>
+                <td style="text-align: center">'.$data["rbr"].'</td>
+                <td style="width:70px">'.$data["prezime"].'</td>
+                <td style="width:70px">'.$data["ime"].'</td>
+                <td style="text-align: center">'.$data["datum"].'</td>
+                <td style="text-align: center">'.$data["placeno"].'</td>
                 </tr>';
  }
             echo '</tbody></table>';
         }
- $poduzetnik=array();    
+ $data=array();    
         
 
-$poduzetnik[1]["rbr"]='1.';
-$poduzetnik[1]["ime"]='Iva';
-$poduzetnik[1]["prezime"]='Ivic';
-$poduzetnik[1]["datum"]='01.03.2011';
-$poduzetnik[1]["placeno"]=
+$data[1]["rbr"]="1.";
+$data[1]["ime"]="Iva";
+$data[1]["prezime"]="Ivic";
+
+$data[1]["datum"]="2011-03-01";
+$timestamp1 = strtotime($data[1]["datum"]);
+$new_date1 = date("d.m.Y.", $timestamp1);
+$data[1]["datum"]=$new_date1;
+
+$data[1]["placeno"]=
         '<select>
         <option value="Da">Da</option>
         <option value="Ne">Ne</option>
         </select>';
 
-$poduzetnik[2]["rbr"]='2.';
-$poduzetnik[2]["ime"]='Petar';
-$poduzetnik[2]["prezime"]='Peric';
-$poduzetnik[2]["datum"]='05.03.2011';
-$poduzetnik[2]["placeno"]=
+
+$data[2]["rbr"]="2.";
+$data[2]["ime"]="Petar";
+$data[2]["prezime"]="Peric";
+
+$data[2]["datum"]="2011-03-05";
+$timestamp2 = strtotime($data[2]["datum"]);
+$new_date2 = date("d.m.Y.", $timestamp2);
+$data[2]["datum"]=$new_date2;
+
+$data[2]["placeno"]=
         '<select>
         <option value="Ne">Ne</option>
         <option value="Da">Da</option>
         </select>';
         
-$poduzetnik[3]["rbr"]='3.';
-$poduzetnik[3]["ime"]='Marko';
-$poduzetnik[3]["prezime"]='Maric';
-$poduzetnik[3]["datum"]='06.03.2011';
-$poduzetnik[3]["placeno"]=
+
+$data[3]["rbr"]="3.";
+$data[3]["ime"]="Marko";
+$data[3]["prezime"]="Maric";
+
+$data[3]["datum"]="2011-03-06";
+$timestamp3 = strtotime($data[3]["datum"]);
+$new_date3 = date("d.m.Y.", $timestamp3);
+$data[3]["datum"]=$new_date3;
+
+$data[3]["placeno"]=
         '<select>
         <option value="Ne">Ne</option>
         <option value="Da">Da</option>
         </select>';
         
-$poduzetnik[4]["rbr"]='4.';
-$poduzetnik[4]["ime"]='Ana';
-$poduzetnik[4]["prezime"]='Anic';
-$poduzetnik[4]["datum"]='08.03.2011';
-$poduzetnik[4]["placeno"]=
+
+$data[4]["rbr"]="4.";
+$data[4]["ime"]="Ana";
+$data[4]["prezime"]="Anic";
+
+$data[4]["datum"]="2011-03-08";
+$timestamp4 = strtotime($data[4]["datum"]);
+$new_date4 = date("d.m.Y.", $timestamp4);
+$data[4]["datum"]=$new_date4;
+
+$data[4]["placeno"]=
         '<select>
         <option value="Da">Da</option>
         <option value="Ne">Ne</option>
         </select>';
         
-$poduzetnik[5]["rbr"]='5.';
-$poduzetnik[5]["ime"]='Marko';
-$poduzetnik[5]["prezime"]='Maric';
-$poduzetnik[5]["datum"]='08.03.2011';
-$poduzetnik[5]["placeno"]=
+
+$data[5]["rbr"]="5.";
+$data[5]["ime"]="Marko";
+$data[5]["prezime"]="Maric";
+
+$data[5]["datum"]="2011-03-08";
+$timestamp5 = strtotime($data[5]["datum"]);
+$new_date5 = date("d.m.Y.", $timestamp5);
+$data[5]["datum"]=$new_date5;
+
+$data[5]["placeno"]=
         '<select>
         <option value="Ne">Ne</option>
         <option value="Da">Da</option>
         </select>';
 
-$poduzetnik[6]["rbr"]='6.';
-$poduzetnik[6]["ime"]='Jure';
-$poduzetnik[6]["prezime"]='Juric';
-$poduzetnik[6]["datum"]='12.03.2011';
-$poduzetnik[6]["placeno"]=
+
+$data[6]["rbr"]="6.";
+$data[6]["ime"]="Jure";
+$data[6]["prezime"]="Juric";
+
+$data[6]["datum"]="2011-03-12";
+$timestamp6 = strtotime($data[6]["datum"]);
+$new_date6 = date("d.m.Y.", $timestamp6);
+$data[6]["datum"]=$new_date6;
+
+$data[6]["placeno"]=
         '<select>
         <option value="Ne">Ne</option>
         <option value="Da">Da</option>
         </select>';
 
-$poduzetnik[7]["rbr"]='7.';
-$poduzetnik[7]["ime"]='Antoia';
-$poduzetnik[7]["prezime"]='Antic';
-$poduzetnik[7]["datum"]='15.03.2011';
-$poduzetnik[7]["placeno"]=
-        '<select>
-        <option value="Da">Da</option>
-        <option value="Ne">Ne</option>
-        </select>';
 
-$poduzetnik[8]["rbr"]='8.';
-$poduzetnik[8]["ime"]='Zvonko';
-$poduzetnik[8]["prezime"]='Zvonkic';
-$poduzetnik[8]["datum"]='16.03.2011';
-$poduzetnik[8]["placeno"]=
-        '<select>
-        <option value="Da">Da</option>
-        <option value="Ne">Ne</option>
-        </select>';
+$data[7]["rbr"]="7.";
+$data[7]["ime"]="Antoia";
+$data[7]["prezime"]="Antic";
 
-$poduzetnik[9]["rbr"]='9.';
-$poduzetnik[9]["ime"]='Mario';
-$poduzetnik[9]["prezime"]='Marijovic';
-$poduzetnik[9]["datum"]='16.03.2011';
-$poduzetnik[9]["placeno"]=
-        '<select>
-        <option value="Ne">Ne</option>
-        <option value="Da">Da</option>
-        </select>';
+$data[7]["datum"]="2011-03-15";
+$timestamp7 = strtotime($data[7]["datum"]);
+$new_date7 = date("d.m.Y.", $timestamp7);
+$data[7]["datum"]=$new_date7;
 
-$poduzetnik[10]["rbr"]='10.';
-$poduzetnik[10]["ime"]='Zlatan';
-$poduzetnik[10]["prezime"]='Zlatic';
-$poduzetnik[10]["datum"]='16.03.2011';
-$poduzetnik[10]["placeno"]=
+$data[7]["placeno"]=
         '<select>
         <option value="Da">Da</option>
         <option value="Ne">Ne</option>
         </select>';
 
 
-tablica_ispis($poduzetnik);
+$data[8]["rbr"]="8.";
+$data[8]["ime"]="Zvonko";
+$data[8]["prezime"]="Zvonkic";
+
+$data[8]["datum"]="2011-03-16";
+$timestamp8 = strtotime($data[8]["datum"]);
+$new_date8 = date("d.m.Y.", $timestamp8);
+$data[8]["datum"]=$new_date8;
+
+$data[8]["placeno"]=
+        '<select>
+        <option value="Da">Da</option>
+        <option value="Ne">Ne</option>
+        </select>';
+
+
+$data[9]["rbr"]="9.";
+$data[9]["ime"]="Mario";
+$data[9]["prezime"]="Marijovic";
+
+$data[9]["datum"]="2011-03-16";
+$timestamp9 = strtotime($data[9]["datum"]);
+$new_date9 = date("d.m.Y.", $timestamp9);
+$data[9]["datum"]=$new_date9;
+
+$data[9]["placeno"]=
+        '<select>
+        <option value="Ne">Ne</option>
+        <option value="Da">Da</option>
+        </select>';
+
+
+$data[10]["rbr"]="10.";
+$data[10]["ime"]="Zlatan";
+$data[10]["prezime"]="Zlatic";
+
+$data[10]["datum"] = "2011-03-16";
+ $timestamp10 = strtotime($data[10]["datum"]);
+ $new_date10 = date("d.m.Y.", $timestamp10);
+$data[10]["datum"]=$new_date10;
+
+$data[10]["placeno"]=
+        '<select>
+        <option value="Da">Da</option>
+        <option value="Ne">Ne</option>
+        </select>';
+
+
+tablica_ispis($data);
 
 ?>
-
-        
-        
-
