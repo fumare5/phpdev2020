@@ -11,5 +11,7 @@
  * @author Danijel
  */
 interface IBuhe {
-    //put your code here
+    function ceskaj_se(); // samo navedeno bez vičitastih zagrada
+    function masi_repom();
+    
 }
